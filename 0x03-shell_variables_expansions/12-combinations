@@ -1,3 +1,2 @@
 #!/bin/bash
-echo $((25+(26*25))) | echo $(({a..z}-{oo})) 
-
+echo {a..z}{a..z} |tr " " "\n" | grep "oo" -v
